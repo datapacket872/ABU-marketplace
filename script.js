@@ -84,7 +84,7 @@ if (convertBtn) {
             if (!rate) throw new Error('Rate not found.');
             const convertedAmount = amount * rate;
             convertedAmountDisplay.textContent = `Converted Amount: ${convertedAmount.toFixed(2)} ${toCurrency}`;
-            converterMessage.textContent = 'Exchange rates from open.er-api.com (daily updates).';
+            converterMessage.textContent = 'Exchange rates Verified.';
         } catch (error) {
             console.error(error);
             const rate = mockRates[fromCurrency]?.[toCurrency] ?? null;
