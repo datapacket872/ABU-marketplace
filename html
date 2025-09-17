@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABU Marketplace - Login</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-cyan-500 to-indigo-700">
+    <div class="bg-white rounded-xl shadow-lg p-8 max-w-md w-full frosted-glass">
+        <img src="https://placehold.co/200x50?text=ABU+Marketplace&font=roboto" alt="ABU Marketplace Logo" class="mx-auto mb-6">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Login to ABU Marketplace</h2>
+        <form id="login-form" class="flex flex-col space-y-4">
+            <input type="text" id="username" placeholder="Username" required class="p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" aria-label="Username">
+            <input type="password" id="password" placeholder="Password" required class="p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" aria-label="Password">
+            <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300">Login</button>
+        </form>
+        <p id="error-message" class="text-red-500 text-center mt-4 hidden">Invalid username or password.</p>
+    </div>
+    <script src="auth.js"></script>
+</body>
+</html>
